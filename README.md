@@ -279,3 +279,35 @@ $ git log --graph
 | | Date:   Mon Jul 28 10:45:13 2025 +0200
 | |
 | |     dropping a commit
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git reflog
+69b1081 (HEAD -> main) HEAD@{0}: commit: visualizing git history on a graph
+65b7d0d HEAD@{1}: commit: cherry-picking commits
+ddb37f3 HEAD@{2}: cherry-pick: implemented test 5
+46fc073 HEAD@{3}: checkout: moving from ft/branch to main
+96acba3 (ft/branch) HEAD@{4}: commit: implemented test 5
+46fc073 HEAD@{5}: checkout: moving from main to ft/branch
+46fc073 HEAD@{6}: commit: successfully deleted test 5
+b17e69b HEAD@{7}: commit (merge): dropping commit
+d34fd7d (origin/main) HEAD@{8}: checkout: moving from ft/branch to main
+:
+69b1081 (HEAD -> main) HEAD@{0}: commit: visualizing git history on a graph
+65b7d0d HEAD@{1}: commit: cherry-picking commits
+ddb37f3 HEAD@{2}: cherry-pick: implemented test 5
+46fc073 HEAD@{3}: checkout: moving from ft/branch to main
+96acba3 (ft/branch) HEAD@{4}: commit: implemented test 5
+46fc073 HEAD@{5}: checkout: moving from main to ft/branch
+46fc073 HEAD@{6}: commit: successfully deleted test 5
+b17e69b HEAD@{7}: commit (merge): dropping commit
+d34fd7d (origin/main) HEAD@{8}: checkout: moving from ft/branch to main
+:
+69b1081 (HEAD -> main) HEAD@{0}: commit: visualizing git history on a graph
+65b7d0d HEAD@{1}: commit: cherry-picking commits
+ddb37f3 HEAD@{2}: cherry-pick: implemented test 5
+46fc073 HEAD@{3}: checkout: moving from ft/branch to main
+96acba3 (ft/branch) HEAD@{4}: commit: implemented test 5
+46fc073 HEAD@{5}: checkout: moving from main to ft/branch
+46fc073 HEAD@{6}: commit: successfully deleted test 5
+b17e69b HEAD@{7}: commit (merge): dropping commit
+d34fd7d (origin/main) HEAD@{8}: checkout: moving from ft/branch to main
