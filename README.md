@@ -111,3 +111,67 @@ fe40b54 chore: Create initial file
 b6f5c49 starting exercise
 a7feaa4 testing
 ff17226 fileg
+
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ touch unwanted.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 5 and 3 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        unwanted.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git add unwanted.txt 
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git commit -m 'unwanted commit'
+[master ce9b1ee] unwanted commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 unwanted.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git log --oneline
+ce9b1ee (HEAD -> master) unwanted commit
+a6056d1 the following steps detail rebasing and changing the last commit
+e6308ea showing the steps
+283b211 Create fourth file
+fa4ab04 Create third file
+3b0a69a chore: Combination of another && second file
+b6f5c49 starting exercise
+a7feaa4 testing
+ff17226 file
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git rebase -i HEAD~
+error: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+drop ce9b1ee unwanted commit
+$ git add README.md
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git commit -m 'adding previous file'
+[master 64f5df6] adding previous file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$ git rebase -i HEAD~2
+Successfully rebased and updated refs/heads/master.
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
+$
