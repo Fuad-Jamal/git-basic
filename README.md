@@ -422,3 +422,13 @@ $ git add README.md && git commit -m 'merging new feature branch to main'
 
 User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
 $ 
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git branch -m ft/new-branch-from-commit ft/improved-branch-name
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git branch
+  ft/branch
+  ft/improved-branch-name
+* main
+  master
