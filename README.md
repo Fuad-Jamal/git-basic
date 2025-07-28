@@ -349,3 +349,15 @@ $ git add readme.txt && git commit -m 'updated project readme'
  create mode 100644 readme.txt
 
 User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git merge ft/new-feature
+Merge made by the 'ort' strategy.
+ feature.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git branch -d ft/new-feature 
+Deleted branch ft/new-feature (was f1fd1fc).
