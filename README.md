@@ -175,3 +175,68 @@ Successfully rebased and updated refs/heads/master.
 
 User@GisaF23 MINGW64 ~/Codes/project/git-basic (master)
 $
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git checkout -b ft/branch
+Switched to a new branch 'ft/branch'
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/branch)
+$ touch test5.md
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/branch)
+$ git add test5.md 
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/branch)
+$ git commit -m 'implemented test 5'
+[ft/branch 96acba3] implemented test 5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.md
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/branch)
+$ git log --oneline
+96acba3 (HEAD -> ft/branch) implemented test 5
+46fc073 (main) successfully deleted test 5
+b17e69b dropping commit
+64efbdc implemented test 5
+e96dfc0 (master) dropping a commit
+f3966b9 adding previous file
+a6056d1 the following steps detail rebasing and changing the last commit
+e6308ea showing the steps
+283b211 Create fourth file
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 13 commits.
+  (use "git push" to publish your local commits)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git log ft/branch --oneline
+96acba3 (ft/branch) implemented test 5
+46fc073 (HEAD -> main) successfully deleted test 5
+b17e69b dropping commit
+64efbdc implemented test 5
+e96dfc0 (master) dropping a commit
+f3966b9 adding previous file
+a6056d1 the following steps detail rebasing and changing the last commit
+e6308ea showing the steps
+283b211 Create fourth file
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git cherry-pick 96acba3
+[main ddb37f3] implemented test 5
+ Date: Mon Jul 28 11:13:57 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.md
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git log --oneline
+ddb37f3 (HEAD -> main) implemented test 5
+46fc073 successfully deleted test 5
+b17e69b dropping commit
+64efbdc implemented test 5
+e96dfc0 (master) dropping a commit
+f3966b9 adding previous file
+a6056d1 the following steps detail rebasing and changing the last commit
+e6308ea showing the steps
+283b211 Create fourth file
