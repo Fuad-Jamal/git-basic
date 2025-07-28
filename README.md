@@ -361,3 +361,64 @@ Merge made by the 'ort' strategy.
 User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
 $ git branch -d ft/new-feature 
 Deleted branch ft/new-feature (was f1fd1fc).
+
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git checkout -b ft/new-branch-from-commit 67b3713
+Switched to a new branch 'ft/new-branch-from-commit'
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-branch-from-commit)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 22 commits.
+  (use "git push" to publish your local commits)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git merge ft/new-branch-from-commit 
+Already up to date.
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git checkout ft/new-branch-from-commit 
+Switched to branch 'ft/new-branch-from-commit'
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-branch-from-commit)
+$
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-branch-from-commit)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-branch-from-commit)
+$ git switch main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-branch-from-commit)
+$ git add README.md && git commit -m 'changes
+> '
+[ft/new-branch-from-commit 8c8272a] changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-branch-from-commit)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 22 commits.
+  (use "git push" to publish your local commits)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git merge ft/new-branch-from-commit 
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main|MERGING)
+$ git add README.md && git commit -m 'merging new feature branch to main'
+[main 900f3e8] merging new feature branch to main
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ 
