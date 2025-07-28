@@ -311,3 +311,41 @@ ddb37f3 HEAD@{2}: cherry-pick: implemented test 5
 46fc073 HEAD@{6}: commit: successfully deleted test 5
 b17e69b HEAD@{7}: commit (merge): dropping commit
 d34fd7d (origin/main) HEAD@{8}: checkout: moving from ft/branch to main
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git checkout -b ft/new-feature
+Switched to a new branch 'ft/new-feature'
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-feature)
+$ touch feature.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-feature)
+$ git add feature.txt && git commit -m 'implemented core functionality for new feature'
+[ft/new-feature f1fd1fc] implemented core functionality for new feature
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (ft/new-feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 17 commits.
+  (use "git push" to publish your local commits)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ tourch readme.txt
+bash: tourch: command not found
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ tourh readme.txt
+bash: tourh: command not found
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ touch readme.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git add readme.txt && git commit -m 'updated project readme'
+[main d7d8702] updated project readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
