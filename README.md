@@ -432,3 +432,60 @@ $ git branch
   ft/improved-branch-name
 * main
   master
+
+  User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git checkout c0f44c1
+Note: switching to 'c0f44c1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at c0f44c1 renaming branch
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic ((c0f44c1...))
+$ git log --oneline
+c0f44c1 (HEAD, main) renaming branch
+baab283 creating branch from commit
+900f3e8 merging new feature branch to main
+8c8272a (ft/improved-branch-name) changes
+ef1d4ca branch deletion
+67b3713 Merge branch 'ft/new-feature'
+d0a2b93 creating new feature branch and readme file
+d7d8702 updated project readme
+f1fd1fc implemented core functionality for new feature
+:
+c0f44c1 (HEAD, main) renaming branch
+baab283 creating branch from commit
+900f3e8 merging new feature branch to main
+8c8272a (ft/improved-branch-name) changes
+ef1d4ca branch deletion
+67b3713 Merge branch 'ft/new-feature'
+d0a2b93 creating new feature branch and readme file
+d7d8702 updated project readme
+f1fd1fc implemented core functionality for new feature
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic ((c0f44c1...))
+$ git branch
+* (HEAD detached at c0f44c1)
+  ft/branch
+  ft/improved-branch-name
+  main
+  master
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic ((c0f44c1...))
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 26 commits.
+  (use "git push" to publish your local commits)
