@@ -240,3 +240,42 @@ f3966b9 adding previous file
 a6056d1 the following steps detail rebasing and changing the last commit
 e6308ea showing the steps
 283b211 Create fourth file
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git log --graph
+* commit 65b7d0d41cdf475b8ace0632f0cc6918d057c72e (HEAD -> main)
+| Author: Fuad Jamal <jamalfuad34@gmail.com>
+| Date:   Mon Jul 28 11:19:10 2025 +0200
+|
+|     cherry-picking commits
+|
+* commit ddb37f3e4150d1de41152616b0487aa43a419e8b
+| Author: Fuad Jamal <jamalfuad34@gmail.com>
+| Date:   Mon Jul 28 11:13:57 2025 +0200
+|
+|     implemented test 5
+|
+* commit 46fc073f7fa50053efe970d42918af18b1485ab6
+| Author: Fuad Jamal <jamalfuad34@gmail.com>
+| Date:   Mon Jul 28 11:09:57 2025 +0200
+|
+|     successfully deleted test 5
+|
+*   commit b17e69baf096eb8ea32acf856f8ec0bd7b625d4e
+|\  Merge: d34fd7d 64efbdc
+| | Author: Fuad Jamal <jamalfuad34@gmail.com>
+| | Date:   Mon Jul 28 11:09:34 2025 +0200
+| |
+| |     dropping commit
+| |
+| * commit 64efbdcca1cb92984230d913e762f9e68db3cdfa
+| | Author: Fuad Jamal <jamalfuad34@gmail.com>
+| | Date:   Mon Jul 28 10:49:48 2025 +0200
+| |
+| |     implemented test 5
+| |
+| * commit e96dfc06eba37bee95bacc6beadc31cdb7bc340d (master)
+| | Author: Fuad Jamal <jamalfuad34@gmail.com>
+| | Date:   Mon Jul 28 10:45:13 2025 +0200
+| |
+| |     dropping a commit
