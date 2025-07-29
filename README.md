@@ -489,3 +489,23 @@ $ git checkout main
 Switched to branch 'main'
 Your branch is ahead of 'origin/main' by 26 commits.
   (use "git push" to publish your local commits)
+
+  
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git stash
+No local changes to save
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git stash
+Saved working directory and index state WIP on main: ff29923 detaching HEAD from current branch
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git stash pop
+On branch main
+Your branch is ahead of 'origin/main' by 27 commits.
+  (use "git push" to publish your local commits)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (35c81c490e87d7f907f53d1fee5821b1e7cc6c41)
