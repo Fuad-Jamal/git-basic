@@ -509,3 +509,44 @@ Your branch is ahead of 'origin/main' by 27 commits.
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Dropped refs/stash@{0} (35c81c490e87d7f907f53d1fee5821b1e7cc6c41)
+
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ touch file.gitignore
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ touch tmp.py
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 28 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.gitignore
+        tmp.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git add tmp.py && git commit -m 'python code'
+[main ec40b36] python code
+ 1 file changed, 12 insertions(+)
+ create mode 100644 tmp.py
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 29 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$
