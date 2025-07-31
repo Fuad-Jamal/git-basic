@@ -550,3 +550,33 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
 $
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag v1.0
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag
+v1.0
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag v1.0 v1.1
+fatal: Failed to resolve 'v1.1' as a valid ref.
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag v1.1 v1.0
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag
+v1.0
+v1.1
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag -d v1.0
+Deleted tag 'v1.0' (was af3b8a3)
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$ git tag
+v1.1
+
+User@GisaF23 MINGW64 ~/Codes/project/git-basic (main)
+$
